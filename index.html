@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skay's personal website</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/2b65ebc910.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+ <div id=header>
+ 
+  <div class="container">
+  <nav>
+    <img src="/Personal portfolio /Logo.png" class="logo">
+    <ul id="sidedemenu">
+ <li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#Contact">Contact</a></li>
+<i class="fa-solid fa-xmark fa-fade" onclick="closemenu()"></i>
+
+    </ul>
+    <i class="fa-solid fa-bars fa-fade fa-2xs"onclick="openmenu()"></i>
+  </nav>
+  </div>
+  <div class="header-text">
+  <p>"Web developer"</p>
+  <h1>HI,I AM <span>STEVEN</span>,<br>WELCOME TO <br>MY PERSONAL<br> WEBSITE </h1>
+  </div>
+  </div>
+  <div id="about"><div class="container"><div class="row">
+    <div class="about-col-1"><img src="/Personal portfolio /PSX_20230809_133037.jpg"></div>
+    <div class="about-col-2"><h1>About me</h1>
+    <p>I am a hard-working<br> and driven individual who isn't afraid to face a challenge. I'm passionate <br>about my work and I know how to get the job done. I would<br>
+    describe myself as an open and honest person who doesn't believe <br>in misleading other people and tries to be fair in everything I do.</p><div class="tab-titles">
+      <p class="tab-links active-link"onclick="opentab('skills')">skills</p>
+      <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+      <p class="tab-links"onclick="opentab('Education')">Education</p>
+    </div></div>
+    
+  </div>
+  </div>
+  </div>
+ <div class="tab-contents active-tab" id="skills">
+   <ul>
+     <li><span>Graphic designer</span><br>complex art and editing</li>
+     <li><span>Tutoring </span><br>Additional mathematics </li>
+     <li><span>Chess coach </span><br>advanced training for beginners </li>
+   </ul>
+ </div>
+ <div class="tab-contents" id="Experience">
+   <ul>
+     <li><span>Graphic designer</span><br>complex art and editing</li>
+     <li><span>Tutoring </span><br>Additional mathematics </li>
+     <li><span>Chess coach </span><br>advanced training for beginners </li>
+   </ul>
+ </div>
+ <div class="tab-contents" id="Education">
+   <ul>
+     <li><span>Graphic designer</span><br>complex art and editing</li>
+     <li><span>Tutoring </span><br>Additional mathematics </li>
+     <li><span>Chess coach </span><br>advanced training for beginners </li>
+   </ul>
+ </div>
+ <script>
+ 
+ var tab-links=document.getElementsByClassName("tab-links");
+   var tab-contents=document.getElementsByClassName("tab-contents");
+   function open-tab('tabname'){for(tab-link of tab-links){tab-link.ClassList.remove("active-link");}
+     for(tab-content of tab-contents){tab-content.ClassList.remove("active-tab");
+       event.currentTarget.ClassList.add("active-link");document.getElementById(tabname).classList.add("active-tab");
+     }
+   }
+   
+ </script>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services </h1>
+    <div class="services-list">
+  
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+      <p>Able to desin various types of websites such portfolio, personal, business </p>
+      <a href="#">Learn more</a>
+      </div>
+            <div>
+<i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+      <p>Able to desin various types of websites such portfolio, personal, business </p>
+      <a href="#">Learn more</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div id="portfolio">
+  <div class="container">
+    <h1 
+    
+   <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+  <div class="work">
+    <img src="/Personal portfolio /work-1.png" >
+    <div class="layer">
+      <h1>Graphic Design </h3>
+      <p>Able to design to apps vbbjkkkffgg</p>
+      <a href="#">Learn</a>
+      
+    </div>
+  </div>    
+  <div class="work">
+  <img src="/Personal portfolio /work-2 (1).png">
+   <div class="layer">
+      <h1>Graphic Design </h3>
+      <p>Able to design to apps vbbjkkkffgg</p>
+      <a href="#">Learn</a>
+      
+    </div>
+  </div>
+  <div class="work">
+  <img src="/Personal portfolio /work-3 (1).png">
+  <div class="layer">
+      <h1>Graphic Design </h3>
+      <p>Able to design to apps vbbjkkkffgg</p>
+      <a href="#">Learn</a>
+      
+    </div>
+  </div>
+  
+    </div>
+    <a href="#" class="btn">SEE MORE</a>
+  </div>
+</div>
+<div id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>kangwasteven72@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0761098390</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          
+        </div>
+        <a href="/my-cv (1).pdf"download  class="btn btn2">Download CV</a>
+      </div>
+    <div class="contact-right">
+     <form class="submit-to-google-sheet">
+       <input type="text" name="Name" placeholder="You Name"required class="Name">
+       <input type="text" name="Email" placeholder="You Email"required>
+       <textarea name="Message" rows="4"placeholder="your Message"></textarea>
+       <button type="submit"class="btn btn2">Submit</button>
+     </form>
+        
+      
+    </div>
+      
+      
+    </div>
+    
+  </div>
+  <div class="Copyright">Copyright@Steven</div>
+  
+</div>
+<script>
+  var sidemenu=document.getElementById("sidedemenu");
+  function openmenu(){sidemenu.style.right="0";}
+  function closemenu(){sidemenu.style.right="-300px";}
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOO60JTLuwXstNgBcqOxTxt7wc4J_jzWjUP4jLPLC0lJsh-QMw5xKigMoRApPhvIcnQQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+ 
+  
+
+</body>
+
+</html>
